@@ -1,0 +1,108 @@
+*,html,body {
+    background: #1d1d1d;
+    margin: 0;
+    padding: 0;
+}
+*:focus{
+    outline: 0;
+}
+
+.logo{
+    position: absolute;
+    top: 3%;
+    left: 1%;
+    color: white;
+    font-family: sans-serif;
+    z-index: 10;
+    background-color: rgba(0,0,0,0);
+}
+.text{
+    color: #fc5d5d;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#parent1 {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    justify-items: center;
+    justify-content: space-around;
+    align-content: center;
+    overflow: hidden;
+}
+
+.divs1 {
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.divs1:nth-child(odd) {
+    width: 1vw;
+    height: 1vw;
+    background-color: #76d476;
+}
+
+.divs1:nth-child(even) {
+    width: 1.6vw;
+    height: 1.6vw;
+    background-color: #b46fbd;
+}
+
+.control{
+    position: absolute;
+    top: 3%;
+    right: 1%;
+    display: inline-grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-items: center;
+    background-color: rgba(0,0,0,0);
+    column-gap: 5px;
+    box-sizing: border-box;
+}
+
+#increment,#decrement{
+    width: 6vw;
+    border-radius: 25px 25px;
+    font-size: 28px;
+    cursor: pointer;
+    background: #f1f1f1;
+    border: solid #f1f1f1 2px;
+    color: #4d4d4d;
+}
+#increment:hover,#decrement:hover{
+    border: solid #1d1d1d 2px;
+}
+
+#value{
+    width: 6vw;
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 25px 25px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
+#value:hover,#value:focus{
+    border: solid #f1f1f1 2px;
+}
+
+button{
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+}
+#reset,#apply{
+    width: 6vw;
+    background: #f1f1f1;
+    border: solid #f1f1f1 2px;
+    color: #4d4d4d;
+    border-radius: 25px 25px;
+    font-size: 15px;
+    cursor: pointer;
+}
+#reset:hover,#apply:hover{
+    border: solid #1d1d1d 2px;
+}
+
