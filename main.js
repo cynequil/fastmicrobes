@@ -95,6 +95,7 @@ function helper() {
         parent.removeChild(parent.firstChild);
     }
     divCount = divNo.value;
+    divNo.placeholder = divCount;
     divCount = Number(divCount);
     createDiv(divCount, 'div', 'divs1', 'parent1');
     unique(divCount);
