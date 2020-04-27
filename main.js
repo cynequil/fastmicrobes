@@ -122,7 +122,8 @@ createDiv(divCount, 'div', 'divs1', 'parent1'); //inserts provided divCount numb
 unique(divCount);
 console.log("Initial microbes count:", divCount);
 
-setTimeout(ranMove, 500);//starts the animation
+setTimeout(ranMove, 300);//starts the animation
+
 
 increment.addEventListener('click', increase);
 decrement.addEventListener('click', decrease);

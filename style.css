@@ -1,24 +1,23 @@
-*,html,body {
-    background: #1d1d1d;
+*{
     margin: 0;
     padding: 0;
+    outline: none;
 }
-*:focus{
-    outline: 0;
+body{
+    background-color: #1d1d1d;
+    font-family: sans-serif;
 }
-
 .logo{
     position: absolute;
-    top: 3%;
-    left: 1%;
-    color: white;
-    font-family: sans-serif;
-    z-index: 10;
+    top: 0;
+    font-size: 40px;
+    color:white;
+    padding: 10px;
     background-color: rgba(0,0,0,0);
 }
 .text{
     color: #fc5d5d;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0,0,0,0);
 }
 
 #parent1 {
@@ -51,58 +50,73 @@
 
 .control{
     position: absolute;
-    top: 3%;
-    right: 1%;
-    display: inline-grid;
-    grid-template-columns: repeat(5,1fr);
-    justify-items: center;
+    top: 0;
+    right: 0;
     background-color: rgba(0,0,0,0);
-    column-gap: 5px;
-    box-sizing: border-box;
+    row-gap: 5px;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    row-gap: 5px;
+    padding: 10px;
+    width: 20%;
+    justify-items: center;
+    /* border: solid forestgreen 2px; */
 }
-
-#increment,#decrement{
-    width: 6vw;
-    border-radius: 25px 25px;
-    font-size: 28px;
-    cursor: pointer;
-    background: #f1f1f1;
-    border: solid #f1f1f1 2px;
-    color: #4d4d4d;
+.input{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
-#increment:hover,#decrement:hover{
-    border: solid #1d1d1d 2px;
-}
-
-#value{
-    width: 6vw;
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(0, 0, 0, 0);
-    border-radius: 25px 25px;
+.divcount{
+    font-size: 14px;
+    background-color: rgba(255,255,255,0.2);
+    color: white;
     text-align: center;
-    color: white;
-    font-size: 15px;
-}
-
-#value:hover,#value:focus{
-    border: solid #f1f1f1 2px;
-}
-
-button{
-    background: rgba(255, 255, 255, 0.1);
+    width: 40%;
     border: none;
-    color: white;
+    border-radius: 25px 25px;
 }
-#reset,#apply{
-    width: 6vw;
-    background: #f1f1f1;
-    border: solid #f1f1f1 2px;
-    color: #4d4d4d;
+.divcount:focus{
+    background-color: white;
+    color: black;
+}
+.arith{
+    width: 25%;
+    background-color: #5959ff;
+    color: white;
+    border: solid 2px #5959ff;
+    border-radius: 25px 25px;
+    font-size: 22px;
+}
+.arith:hover{
+    border: solid 2px white;
+}
+.change{
+    width: 100%;
+    padding: 8px;
+    border: none;
     border-radius: 25px 25px;
     font-size: 15px;
-    cursor: pointer;
+    background-color: rgb(0, 165, 0);
+    color: white;
+    letter-spacing: 1.5px;
 }
-#reset:hover,#apply:hover{
-    border: solid #1d1d1d 2px;
+.change:hover{
+    background-color:  rgb(0, 165, 0,0.5);
+}
+
+@media(max-width: 480px){
+    .logo{
+        font-size: 26.5px;
+    }
+    .control{
+        width: 32.5%;
+        padding: 10px;
+    }.divcount{
+        font-size: 14px;
+    }
+    .change{
+        font-size: 12.5px;
+    }
 }
 
