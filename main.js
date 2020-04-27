@@ -100,6 +100,7 @@ function helper() {
     createDiv(divCount, 'div', 'divs1', 'parent1');
     unique(divCount);
     console.log("New microbes added");
+    microbesCount.innerHTML = divCount;
     console.log("Present microbes count:", divCount);
 }
 //reset function
@@ -109,15 +110,18 @@ function normal() {
         parent.removeChild(parent.firstChild);
     }
     divNo.value = divCount;
+    divNo.placeholder = divCount;
     createDiv(divCount, 'div', 'divs1', 'parent1');
     unique(divCount);
     console.log("Reset Done");
+    microbesCount.innerHTML = divCount;
     console.log("Present microbes count: ", divCount);
 }
 
 //driver code
 let parent = document.getElementById('parent1');
 let divNo = document.getElementById('value');
+let microbesCount = document.getElementById('microbes');
 let divCount = 50;
 createDiv(divCount, 'div', 'divs1', 'parent1'); //inserts provided divCount number of divs into the DOM
 unique(divCount);

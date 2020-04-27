@@ -11,15 +11,23 @@
 
 <body>
     <section id="parent1"></section>
-    <h1 class="logo">fast<span class="text">microbes</span></h1>
+    <div class="title">
+        <h1 class="logo">fast<span class="text">microbes</span></h1>
+        <div class="desc">
+            <h6>Simple js animation</h6>
+            <h6>Fiddle with the count of microbes</h6>
+            <h6>Watch them move FAST</h6>
+        </div>
+    </div>
     <div class="control">
         <div class="input">
             <input type="button" id="increment" class="arith" value="+">
-            <input type="text" id="value" class="divcount" value="50">
+            <input type="tel" id="value" class="divcount" value="50" placeholder="50">
             <input type="button" id="decrement" class="arith" value="-">
         </div>
         <button id="reset" class="change">Reset</button>
         <button id="apply" class="change">Apply</button>
+        <h6 class="count">Microbes : <span id="microbes">50</span></h6>
     </div>
 </body>
 
